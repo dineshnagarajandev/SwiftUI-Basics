@@ -16,6 +16,12 @@
 		CC03F8072407088400BDC0AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC03F8052407088400BDC0AD /* LaunchScreen.storyboard */; };
 		CC03F8122407088400BDC0AD /* SwiftUI_BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03F8112407088400BDC0AD /* SwiftUI_BasicsTests.swift */; };
 		CC03F81D2407088400BDC0AD /* SwiftUI_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03F81C2407088400BDC0AD /* SwiftUI_BasicsUITests.swift */; };
+		CC03F82C24071E7100BDC0AD /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03F82B24071E7100BDC0AD /* ProfileImage.swift */; };
+		CC450046240BEBB1008E899A /* InstagramPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC450045240BEBB0008E899A /* InstagramPostView.swift */; };
+		CC450048240C0053008E899A /* InstagramHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC450047240C0053008E899A /* InstagramHomeView.swift */; };
+		CC45004B240C1CB2008E899A /* InstagramProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45004A240C1CB2008E899A /* InstagramProfileView.swift */; };
+		CC45004D240C2362008E899A /* InstagramProfileUserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */; };
+		CCF1E60B24084ABF003A77F7 /* ComponentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		CC03F8182407088400BDC0AD /* SwiftUI-BasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-BasicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC03F81C2407088400BDC0AD /* SwiftUI_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsUITests.swift; sourceTree = "<group>"; };
 		CC03F81E2407088400BDC0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC03F82B24071E7100BDC0AD /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		CC450045240BEBB0008E899A /* InstagramPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramPostView.swift; sourceTree = "<group>"; };
+		CC450047240C0053008E899A /* InstagramHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramHomeView.swift; sourceTree = "<group>"; };
+		CC45004A240C1CB2008E899A /* InstagramProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramProfileView.swift; sourceTree = "<group>"; };
+		CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramProfileUserDetailView.swift; sourceTree = "<group>"; };
+		CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 		CC03F7F62407087F00BDC0AD /* SwiftUI-Basics */ = {
 			isa = PBXGroup;
 			children = (
+				CCF1E60924084AAA003A77F7 /* Components */,
+				CC03F82A24071E5900BDC0AD /* CustomViews */,
 				CC03F7F72407088000BDC0AD /* AppDelegate.swift */,
 				CC03F7F92407088000BDC0AD /* SceneDelegate.swift */,
 				CC03F7FE2407088000BDC0AD /* ContentView.swift */,
@@ -137,6 +151,34 @@
 				CC03F81E2407088400BDC0AD /* Info.plist */,
 			);
 			path = "SwiftUI-BasicsUITests";
+			sourceTree = "<group>";
+		};
+		CC03F82A24071E5900BDC0AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CC03F82B24071E7100BDC0AD /* ProfileImage.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CC450049240C1C5F008E899A /* InstagramProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CC45004A240C1CB2008E899A /* InstagramProfileView.swift */,
+				CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */,
+			);
+			path = InstagramProfile;
+			sourceTree = "<group>";
+		};
+		CCF1E60924084AAA003A77F7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CC450049240C1C5F008E899A /* InstagramProfile */,
+				CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */,
+				CC450045240BEBB0008E899A /* InstagramPostView.swift */,
+				CC450047240C0053008E899A /* InstagramHomeView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +314,13 @@
 			files = (
 				CC03F7F82407088000BDC0AD /* AppDelegate.swift in Sources */,
 				CC03F7FD2407088000BDC0AD /* SwiftUI_Basics.xcdatamodeld in Sources */,
+				CC450046240BEBB1008E899A /* InstagramPostView.swift in Sources */,
+				CC45004D240C2362008E899A /* InstagramProfileUserDetailView.swift in Sources */,
+				CCF1E60B24084ABF003A77F7 /* ComponentsListView.swift in Sources */,
+				CC450048240C0053008E899A /* InstagramHomeView.swift in Sources */,
+				CC03F82C24071E7100BDC0AD /* ProfileImage.swift in Sources */,
 				CC03F7FF2407088000BDC0AD /* ContentView.swift in Sources */,
+				CC45004B240C1CB2008E899A /* InstagramProfileView.swift in Sources */,
 				CC03F7FA2407088000BDC0AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +491,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Basics/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +513,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-Basics/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,7 +533,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-BasicsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +554,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-BasicsTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +574,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-BasicsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +594,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SwiftUI-BasicsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
