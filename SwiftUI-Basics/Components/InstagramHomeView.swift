@@ -39,7 +39,7 @@ struct InstagramHomeView: View {
                 Image(systemName: "person.circle")
                 Text("Profile")
             }
-        }.navigationBarTitle("dineshnagarajan.dev").navigationBarHidden(true).navigationBarBackButtonHidden(true)
+        }.navigationBarTitle("dineshnagarajan.dev", displayMode: .automatic).navigationBarHidden(true).navigationBarBackButtonHidden(true)
     }
 }
 

@@ -16,28 +16,30 @@ struct InstagramProfileUserDetailView: View {
     @State var profileFollowingCount: Int = 0
     
     var body: some View {
-        VStack {
+        VStack(spacing: 8) {
             HStack(spacing: 30) {
                 ProfileImage(profileImageWidth: 100, profileImageHeight: 100, profileImageLineWidth: 2, profileImageShadowRadius: 10, profileImageName: profileImageName)
                 VStack {
                     Text("\(profilePostCount)").fontWeight(.bold)
-                    Text("Post").fontWeight(.regular)
+                    Text("Post").fontWeight(.regular).font(Font.system(size: 14))
                 }
                 VStack {
                     Text("\(profileFollowerCount)").fontWeight(.bold)
-                    Text("Followers").fontWeight(.regular)
+                    Text("Followers").fontWeight(.regular).font(Font.system(size: 14))
                 }
                 VStack {
                     Text("\(profileFollowingCount)").fontWeight(.bold)
-                    Text("Following").fontWeight(.regular)
+                    Text("Following").fontWeight(.regular).font(.system(size: 14))
                 }
             }.frame(minWidth: 0, maxWidth: .infinity)
             Text("Dinesh Nagarajan").font(.headline).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).offset(x: 20)
-            Text("Twitter: dineshn19 \n check more files of description").font(.subheadline).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).offset(x: 20)
-            Button(action: {
-                print("User url tapped.")
-            }){
-                Text("dineshnagarajan.dev").font(.subheadline).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).offset(x: 20).foregroundColor(Color.blue)
+            Text("Twitter: dineshn19 \n check more files of description").font(.system(size: 14)).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).offset(x: 20)
+            Group {
+                Button(action: {
+                    print("User url tapped.")
+                }){
+                    Text("dineshnagarajan.dev").font(.subheadline).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).offset(x: 20).foregroundColor(Color.blue)
+                    }.padding(4)
             }
             HStack {
                 Button(action: {}){
