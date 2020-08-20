@@ -22,6 +22,7 @@
 		CC45004B240C1CB2008E899A /* InstagramProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45004A240C1CB2008E899A /* InstagramProfileView.swift */; };
 		CC45004D240C2362008E899A /* InstagramProfileUserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */; };
 		CCD8F78024EF3C3600C2CD48 /* HomeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD8F77F24EF3C3600C2CD48 /* HomeScreen.png */; };
+		CCD8F78224EF3D5F00C2CD48 /* ProfileScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD8F78124EF3D5F00C2CD48 /* ProfileScreen.png */; };
 		CCF1E60B24084ABF003A77F7 /* ComponentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		CC45004A240C1CB2008E899A /* InstagramProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramProfileView.swift; sourceTree = "<group>"; };
 		CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramProfileUserDetailView.swift; sourceTree = "<group>"; };
 		CCD8F77F24EF3C3600C2CD48 /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeScreen.png; sourceTree = "<group>"; };
+		CCD8F78124EF3D5F00C2CD48 /* ProfileScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProfileScreen.png; sourceTree = "<group>"; };
 		CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD8F77F24EF3C3600C2CD48 /* HomeScreen.png */,
+				CCD8F78124EF3D5F00C2CD48 /* ProfileScreen.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC03F8072407088400BDC0AD /* LaunchScreen.storyboard in Resources */,
+				CCD8F78224EF3D5F00C2CD48 /* ProfileScreen.png in Resources */,
 				CC03F8042407088400BDC0AD /* Preview Assets.xcassets in Resources */,
 				CCD8F78024EF3C3600C2CD48 /* HomeScreen.png in Resources */,
 				CC03F8012407088400BDC0AD /* Assets.xcassets in Resources */,
