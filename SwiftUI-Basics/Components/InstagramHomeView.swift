@@ -2,8 +2,6 @@
 //  InstagramHomeView.swift
 //  SwiftUI-Basics
 //
-//  Created by Mac-OBS-09 on 01/03/20.
-//  Copyright © 2020 Mac-OBS-09. All rights reserved.
 //
 
 import SwiftUI
@@ -12,6 +10,7 @@ struct InstagramHomeView: View {
     var body: some View {
         TabView {
             List {
+                InstagramStatusView(userImageName: "male-user")
                 InstagramPostView(userName: "Mark C. Nolen", userImageName: "male-user", userLocation: "Fort Myers, FL 33912", imageName: "1")
                 InstagramPostView(userName: "Kathryn G. Gonzalez", userImageName: "female-user", userLocation: "Huntsville, AL 35802", imageName: "2")
                 InstagramPostView(userName: "Jose H. McFarlane", userImageName: "male-user", userLocation: "Monroe, LA 71209", imageName: "3")
@@ -39,7 +38,18 @@ struct InstagramHomeView: View {
                 Image(systemName: "person.circle")
                 Text("Profile")
             }
-        }.navigationBarTitle("dineshnagarajan.dev", displayMode: .automatic).navigationBarHidden(true).navigationBarBackButtonHidden(true)
+        }.navigationBarTitle("Instagram", displayMode: .inline).navigationBarHidden(true).navigationBarBackButtonHidden(true).navigationBarItems(trailing: HStack(spacing: 30){
+            Button(action: {
+                print("Search navigation bar button")
+            }, label: {
+                Image(systemName: "magnifyingglass").foregroundColor(.black)
+            })
+            Button(action: {
+                print("Message navigation bar button")
+            }, label: {
+                Image(systemName: "message").foregroundColor(.black)
+            })
+        })
     }
 }
 

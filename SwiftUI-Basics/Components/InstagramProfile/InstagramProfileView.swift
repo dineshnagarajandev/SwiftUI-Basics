@@ -2,8 +2,6 @@
 //  InstagramProfileView.swift
 //  SwiftUI-Basics
 //
-//  Created by Mac-OBS-09 on 01/03/20.
-//  Copyright © 2020 Mac-OBS-09. All rights reserved.
 //
 
 import SwiftUI
