@@ -16,28 +16,41 @@ struct InstagramStatusView: View {
                 VStack(spacing: 10){Image(systemName: "plus.circle").frame(width: 20, height: 20).padding()
                     Text("Your Story").font(.system(size: 12))
                 }.frame(width: 90, height: 90)
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60).background(Color.yellow).cornerRadius(60)
+                VStack{
+                    StatusImageView(
+                               outerCircleColor: Color.blue,
+                               statusImage: "dn-cover")
+                    Text("Dinesh Nagarajan").font(.system(size: 12))
+                }
+                VStack{
+                    StatusImageView(
+                               outerCircleColor: Color.blue,
+                               statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60).background(Color.yellow).cornerRadius(60)
+                VStack{StatusImageView(
+                    outerCircleColor: Color.blue,
+                    statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60).background(Color.yellow).cornerRadius(60)
+                VStack{StatusImageView(
+                    outerCircleColor: Color.blue,
+                    statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60).background(Color.yellow).cornerRadius(60)
+                VStack{StatusImageView(
+                    outerCircleColor: Color.blue,
+                    statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60)
+                VStack{StatusImageView(
+                    outerCircleColor: Color.blue,
+                    statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60)
-                    Text("User Name").font(.system(size: 12))
-                }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60)
-                    Text("User Name").font(.system(size: 12))
-                }
-                VStack{Image(userImageName).resizable().frame(width: 60, height: 60)
+                VStack{StatusImageView(
+                    outerCircleColor: Color.blue,
+                    statusImage: "dn-cover")
                     Text("User Name").font(.system(size: 12))
                 }
             }

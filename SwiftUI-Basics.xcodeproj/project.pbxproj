@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91A36BC258DF4FF003BE306 /* InstagramSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A36BB258DF4FF003BE306 /* InstagramSearchView.swift */; };
+		C91A36C5258E7334003BE306 /* StatusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91A36C4258E7334003BE306 /* StatusImageView.swift */; };
 		C9CF7C2E258BC99200860256 /* InstagramStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF7C2D258BC99200860256 /* InstagramStatusView.swift */; };
 		CC03F7F82407088000BDC0AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03F7F72407088000BDC0AD /* AppDelegate.swift */; };
 		CC03F7FA2407088000BDC0AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC03F7F92407088000BDC0AD /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91A36BB258DF4FF003BE306 /* InstagramSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSearchView.swift; sourceTree = "<group>"; };
+		C91A36C4258E7334003BE306 /* StatusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageView.swift; sourceTree = "<group>"; };
 		C9CF7C2D258BC99200860256 /* InstagramStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramStatusView.swift; sourceTree = "<group>"; };
 		CC03F7F42407087F00BDC0AD /* SwiftUI-Basics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Basics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC03F7F72407088000BDC0AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91A36BA258DF4EB003BE306 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C91A36BB258DF4FF003BE306 /* InstagramSearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C91A36C3258E7312003BE306 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF7C2D258BC99200860256 /* InstagramStatusView.swift */,
+				C91A36C4258E7334003BE306 /* StatusImageView.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
 		CC03F7EB2407087F00BDC0AD = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +192,8 @@
 		CC450049240C1C5F008E899A /* InstagramProfile */ = {
 			isa = PBXGroup;
 			children = (
+				C91A36C3258E7312003BE306 /* Status */,
+				C91A36BA258DF4EB003BE306 /* Search */,
 				CC45004A240C1CB2008E899A /* InstagramProfileView.swift */,
 				CC45004C240C2362008E899A /* InstagramProfileUserDetailView.swift */,
 			);
@@ -193,7 +216,6 @@
 				CCF1E60A24084ABF003A77F7 /* ComponentsListView.swift */,
 				CC450045240BEBB0008E899A /* InstagramPostView.swift */,
 				CC450047240C0053008E899A /* InstagramHomeView.swift */,
-				C9CF7C2D258BC99200860256 /* InstagramStatusView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -334,8 +356,10 @@
 				CC03F7F82407088000BDC0AD /* AppDelegate.swift in Sources */,
 				CC03F7FD2407088000BDC0AD /* SwiftUI_Basics.xcdatamodeld in Sources */,
 				CC450046240BEBB1008E899A /* InstagramPostView.swift in Sources */,
+				C91A36BC258DF4FF003BE306 /* InstagramSearchView.swift in Sources */,
 				CC45004D240C2362008E899A /* InstagramProfileUserDetailView.swift in Sources */,
 				CCF1E60B24084ABF003A77F7 /* ComponentsListView.swift in Sources */,
+				C91A36C5258E7334003BE306 /* StatusImageView.swift in Sources */,
 				CC450048240C0053008E899A /* InstagramHomeView.swift in Sources */,
 				CC03F82C24071E7100BDC0AD /* ProfileImage.swift in Sources */,
 				CC03F7FF2407088000BDC0AD /* ContentView.swift in Sources */,
